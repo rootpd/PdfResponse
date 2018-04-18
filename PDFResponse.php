@@ -24,7 +24,9 @@ use Nette\Utils\Callback;
 /**
  * @property-read mPDFExtended $mPDF
  */
-class PdfResponse extends Object implements \Nette\Application\IResponse {
+class PdfResponse implements \Nette\Application\IResponse {
+
+    use \Nette\SmartObject;
 	
 	/**
 	 * Source data
